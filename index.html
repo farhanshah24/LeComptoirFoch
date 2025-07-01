@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Allura&family=Alumni+Sans+Pinstripe:ital@0;1&family=Comic+Relief:wght@400;700&family=Grandiflora+One&family=Nanum+Myeongjo&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Le Comptoir Foch</title>
+  </head> 
+  <body>
+    <!-- ----------------------Preloader for text logo---------------------------->
+     <div id="preloader" class="preloader-overlay">
+      <div class="coffee-bounce">
+        <img src="assets/logo.png" alt="" class="icon">
+      </div>
+    </div>
+    <!-- ----------------------Navbar---------------------------- -->
+    <div id="navbar">
+      <div class="logo">
+        <h1><a href="#home"><img src="assets/logo-text.png" alt=""></a></h1>
+      </div>
+      <img
+        class="navbar-icon"
+        src="assets/navbar-icon.png"
+        alt="Menu"
+        onclick="toggleNav()"
+      />
+      <div class="sections">
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#container">Galerie</a></li>
+          <li><a href="#timings">Horaires</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- -----------------------Home---------------------------- -->
+    <div id="home">
+      <img src="assets/logo.png" height="250px" alt="">
+    </div>
+    <!-- ------------------------About-------------------------- -->
+    <div id="about">
+      <div class="about-text">
+        <h1>Bienvenue au Comptoir Foch</h1>
+        <p>
+          Au cœur du 16ᵉ arrondissement de Paris, à deux pas de l’avenue Foch, Le Comptoir Foch vous invite à vivre une expérience culinaire à la fois élégante et conviviale. Installé au 176 Rue de la Pompe, notre restaurant mêle cuisine française moderne et inspirations du marché, dans un cadre raffiné et chaleureux.
+          <br>
+          Nous mettons un point d’honneur à travailler des produits frais, de saison, et à proposer une carte qui évolue au fil des envies du chef. Que ce soit pour un déjeuner d’affaires, un dîner romantique ou un moment entre amis, chaque assiette est pensée pour ravir les sens.
+          <br>
+          Laissez-vous séduire par l’esprit du comptoir parisien, où goût, simplicité et accueil se rencontrent.
+
+
+        </p>
+      </div>
+      <div class="about-image">
+        <div class="front-image"></div>
+        <div class="back-image"></div>
+      </div>
+    </div>
+    <!-- -----------------------Gallery------------------------------ -->
+    <div id="container">
+      <div class="header">
+        <h1>ART CULINAIRE</h1>
+        <p>Une célébration visuelle des saveurs</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <!-- assets will be populated by JavaScript -->
+      </div>
+    </div>
+     <!-- ------------------------Menu-------------------------------- -->
+     <div id="menu">
+      <h1 class="menu-title">Menu</h1>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="slide fade"><img src="assets/menu1.png" alt="Menu 1"></div>
+      <div class="slide fade"><img src="assets/menu2.png" alt="Menu 2"></div>
+      <div class="slide fade"><img src="assets/menu3.png" alt="Menu 3"></div>
+      <div class="slide fade"><img src="assets/menu4.png" alt="Menu 4"></div>
+      <div class="slide fade"><img src="assets/menu5.png" alt="Menu 5"></div>
+      <div class="slide fade"><img src="assets/menu6.png" alt="Menu 6"></div>
+      <div class="slide fade"><img src="assets/menu7.png" alt="Menu 6"></div>
+
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      <div class="dotss">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+        <!-- ------------------------Timings----------------------------- -->
+         <div id="timings">
+          <div class="timing-title">
+            <h2>Opening</h2>
+            <h2 class="und">Hours</h2>
+          </div>
+          <!-- <div class="separation"></div> -->
+          <div class="times">
+            <div class="mon-thu">
+              <h3>lundi - vendredi</h3>
+              <h2>7.00 - 00.00</h2>
+            </div>
+            <div class="fri-sun">
+              <h3>Le samedi</h3>
+              <h2>8.00 - 23.00</h2>
+            </div>
+            <div class="fri-sun">
+              <h3>Le dimanche</h3>
+              <h2>Fermée</h2>
+            </div>
+          </div>
+         </div>
+    <!-- -----------------------Contact------------------------------ -->
+     <div id="contact">
+      <div class="address">
+        <div class="logo-end">
+        <img class="logo-end-img" src="assets/logo-icon.png" alt="">
+      </div>
+        <span
+          ><img
+            class="location-icon"
+            src="assets/location-icon.png"
+            alt="location-icon"
+          />
+          176 Rue de la Pompe,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75016 Paris, France</span
+        >
+        <a
+          href="https://www.google.com/maps/place/Le+Comptoir+Foch/@48.8711423,2.2836354,16z/data=!4m17!1m10!3m9!1s0x47e66f539cca96e3:0x7f4cd48092387ab9!2sLe+Comptoir+Foch!8m2!3d48.8711423!4d2.2836354!10e5!14m1!1BCgIYIQ!16s%2Fg%2F11xdgzjmzz!3m5!1s0x47e66f539cca96e3:0x7f4cd48092387ab9!8m2!3d48.8711423!4d2.2836354!16s%2Fg%2F11xdgzjmzz?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
+          ><br />voir sur la carte</a
+        >
+      </div>
+      <div class="contact-us">
+        <h1>Contactez-nous</h1>
+        <p>
+          Pour toute demande de renseignements ou commentaire, n'hésitez pas à nous contacter par téléphone ou à nous envoyer un message sur intagram:
+        </p>
+        <div>
+          <img src="assets/phone-icon.png" alt="phone-icon" />
+          <a href="tel:+33145051423">+33 1 45 05 14 23</a>
+        </div>
+        <div class="instagram-link">
+          <img
+            class="instagram-icon"
+            src="assets/instagram.png"
+            alt="Instagram Icon"
+          />
+          <a href="https://www.instagram.com/le_comptoir_foch/">Instagram </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- -----------------------Script------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>
